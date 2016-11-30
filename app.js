@@ -56,3 +56,19 @@ if (response5 === 'yes' || response5 === 'y') {
 } else if (response5 === 'no' || response5 === 'n') {
   alert('Sorry, you are wrong, she has visited Japan and China.');
 }
+
+var myBusNumber = 8;
+
+for (var i = 0; i < 4; i++) {
+  var response6 = parseInt(prompt('What bus did Shelly take to class today?'));
+  if (response6 > myBusNumber) {
+    alert('You guessed too high!');
+  } else if (response6 < myBusNumber) {
+    alert('You guessed too low!');
+  } else if (isNaN(response6)) {
+    alert('That is not a number');
+  } else {
+    alert('Good job!');
+    break;
+  }
+}
