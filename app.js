@@ -72,3 +72,19 @@ for (var i = 0; i < 4; i++) {
     break;
   }
 }
+
+var thanksgivingDinner = ['turkey', 'stuffing', 'sweet potatoes', 'salad'];
+var guesses = 0
+
+for (var j = 0; j < thanksgivingDinner.length; j++) {
+  while (guesses < 6) {
+    var response7 = prompt('What did I eat for Thanksgiving?');
+    if (response7 === thanksgivingDinner[0]) {
+      alert('You are right!');
+      guesses = 6;
+    } else {
+      alert('try again');
+      guesses += 1;
+    }
+  }
+}
