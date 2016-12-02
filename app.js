@@ -97,6 +97,7 @@ function question7(){
   var myFavFoods = ['sushi','tacos','queso','pastries'];
   var attempts = 0;
   var favFoodCorrect = false;
+  var favFoodResult;
 
   while (attempts < 6 && favFoodCorrect === false) {
 
@@ -108,16 +109,15 @@ function question7(){
         counter += 1;
         attempts = 6;
         favFoodCorrect = true;
-        break;
+        favFoodResult = myFavFoods[i];
       }
     }
-    if (favFoodGuess !== myFavFoods[i]) {
+    if (favFoodGuess !== favFoodResult) {
       alert('Sorry, that is not correct!');
       attempts += 1;
     }
     if (attempts > 5 && favFoodCorrect === false) {
       alert('Sorry, you ran out of guesses. My favorite foods are ' + myFavFoods);
-
     }
   }
 }
