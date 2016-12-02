@@ -1,6 +1,6 @@
 'use strict';
 
-alert('Welcome! We are going to play a guessing game, where you will learn more about me. Please provide your responses with yes/no or y/n.');
+alert('Welcome! We are going to play a guessing game, where you will learn more about me.');
 
 var counter = 0;
 
@@ -94,21 +94,37 @@ function question6(){
 question6();
 
 function question7(){
-  var thanksgivingDinner = ['turkey', 'stuffing', 'sweet potatoes', 'salad'];
-  var guesses = 0
+  var myFavFoods = ['sushi','tacos','queso','pastries'];
+  var attempts = 0;
+  var favFoodCorrect = false;
 
-  for (var j = 0; j < thanksgivingDinner.length; j++) {
-    while (guesses < 6) {
-      var eatGuess = prompt('What did I eat for Thanksgiving?');
-      if (eatGuess === thanksgivingDinner[j]) {
-        alert('You are right!');
+  while (attempts < 6 && favFoodCorrect === false) {
+
+    var favFoodGuess = prompt('What are some of my favorite foods?').toLowerCase();
+
+    for (var i = 0; i < myFavFoods.length; i++) {
+      if (favFoodGuess === myFavFoods[i]) {
+        alert('You are right! I like to eat ' + myFavFoods);
         counter += 1;
-        guesses = 6;
-      } else {
-        alert('try again');
-        guesses += 1;
+        attempts = 6;
+        favFoodCorrect = true;
+        break;
       }
+    }
+    if (favFoodGuess !== myFavFoods[i]) {
+      alert('Sorry, that is not correct!');
+      attempts += 1;
+    }
+    if (attempts > 5 && favFoodCorrect === false) {
+      alert('Sorry, you ran out of guesses. My favorite foods are ' + myFavFoods);
+
     }
   }
 }
 question7();
+
+if (4 > counter){
+  alert('Looks like you only got ' + counter + ' out of 7 correct. Good try!');
+} else {
+  alert('Looks like you got ' + counter + ' out of 7 correct. Good job!')
+}
