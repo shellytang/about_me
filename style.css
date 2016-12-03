@@ -1,4 +1,15 @@
 * {
-  outline: 1px dotted orange;
-  color: blue;
+  /*outline: 1px dotted orange;*/
+  font-family: courier;
+  color: #FFF;
+  background: #01ABAA;
+}
+
+header h1 {
+  color: #000;
+  text-align: center;
+  background: #FEDC3D;
+  width: 50%;
+  padding: 15px;
+  margin: auto;
 }
