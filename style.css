@@ -1,15 +1,64 @@
 * {
   /*outline: 1px dotted orange;*/
-  font-family: courier;
-  color: #FFF;
-  background: #01ABAA;
+  font-family: helvetica,arial;
 }
 
-header h1 {
-  color: #000;
-  text-align: center;
-  background: #FEDC3D;
-  width: 50%;
-  padding: 15px;
+body {
+  width: 80%;
   margin: auto;
+  background-color: #355664;
+}
+
+header {
+  color: #FFF;
+  background-color: #213E4A;
+  text-align: center;
+  padding: 10px;
+  margin: 15px auto 0px auto;
+  border-radius: 10px 15px 10px 15px;
+  letter-spacing: 0.2em;
+
+}
+
+header h2 {
+color: #FFF;
+font-size: 22px;
+}
+
+h2 {
+  color: #FFF;
+  font-size: 20px;
+}
+
+section {
+	color: #FFF;
+  background-color: #213E4A;
+	padding: 20px;
+  border-radius: 10px 15px 10px 15px;
+  margin-top: 15px;
+  float: left;
+  width: 60%;
+}
+
+.objective {
+  color: #FFF;
+  background-color: #000;
+	margin: 5px;
+	padding: 10px;
+  border-radius: 10px 15px 10px 15px;
+
+}
+
+article {
+    margin-left: 30px;
+}
+
+aside {
+  color: #FFF;
+  background-color: #213E4A;
+	padding: 20px;
+  border-radius: 10px 15px 10px 15px;
+  margin-top: 15px;
+  float: right;
+  width: 30%;
 }
