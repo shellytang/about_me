@@ -127,5 +127,5 @@ question7();
 if (4 > counter){
   alert('Looks like you only got ' + counter + ' out of 7 correct. Good try, ' + username);
 } else {
-  alert('Looks like you got ' + counter + ' out of 7 correct. Good job, ' + username);
+  alert('Looks like you got ' + counter + ' out of 7 correct. Good job, ' + username +'!');
 }
